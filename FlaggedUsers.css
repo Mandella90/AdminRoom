@@ -1,0 +1,113 @@
+body{
+    background-color: #1e1e1e;
+}
+.flagged-users {
+    background-color: #1e1e1e; /* Windows Spreadsheet dark theme background color */
+    color: #ffffff; /* Text color */
+    margin: 10px;
+    font-size: 18px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    background-color: black;
+  }
+  
+  .header span {
+    text-align: center;
+  }
+  .cell-15,
+  .cell-45,
+  .cell-10,
+  .cell-5 {
+    width: auto;
+    max-width: 100%;
+    text-align: left;
+    white-space: normal;
+    border-left: 1px solid #444;
+    padding: 10px;
+  }  
+  .cell-15 {
+    flex: 0 0 15%;
+  }  
+  .cell-45 {
+    flex: 0 0 50%;
+  }  
+  .cell-10 {
+    flex: 0 0 10%;
+  }  
+ 
+  .dropdown {
+    background-color: #2e2e2e; /* Dropdown background color */
+    color: #ffffff;
+    border: 1px solid #444;
+    padding: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333; /* Separator between rows */
+  }
+
+  .flagEntry {
+    cursor: pointer;
+  }
+  .flagEntry:nth-child(even) li {
+    background-color: #1a1a1a;
+  }
+  .flagEntry:nth-child(odd) li {
+    background-color: #1e1e1e;
+  }
+  .flagEntry:hover li {
+    background-color: #213224;
+  }
+  /* MODAL   MODAL   MODAL   MODAL   MODAL    */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+  .modal {
+    background: #2e2e2e;
+    padding: 30px;
+    border-radius: 10px; 
+    text-align: center;
+    color: rgb(212, 212, 212); 
+    font-size: 24px;
+    border: 2px solid #ccc; 
+  }  
+  .modal button {
+    background: #1b1b1b;
+    padding: 10px 20px; /* Increased horizontal padding */
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    margin: 0 25px; /* Increased margin for better spacing */
+    cursor: pointer;
+    font-size: 24px; /* Font size */
+  }
+  .modal button.yay {
+    color: lightgreen !important; /* Important to override other styles */
+  }
+  
+  .modal button.nay {
+    color: lightcoral !important; /* Important to override other styles */
+  }
+  
